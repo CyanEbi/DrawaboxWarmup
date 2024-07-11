@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Lesson 1",
+        "exercises": [
+            {
+                "name": "Superimposed lines",
+                "link": ""
+            },
+            {
+                "name": "Ghosted lines",
+                "link": ""
+            },
+            {
+                "name": "Ghosted planes",
+                "link": ""
+            },
+            {
+                "name": "Table of ellipses",
+                "link": ""
+            },
+            {
+                "name": "Ellipses in planes",
+                "link": ""
+            },
+            {
+                "name": "Funnels",
+                "link": ""
+            },
+            {
+                "name": "Plotted perspective",
+                "link": ""
+            },
+            {
+                "name": "Rough perspective",
+                "link": ""
+            },
+            {
+                "name": "Rotated boxes",
+                "link": ""
+            },
+            {
+                "name": "Organic perspective",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "250 boxes",
+        "exercises": [
+            {
+                "name": "Boxes",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Lesson 2",
+        "exercises": [
+            {
+                "name": "Organic arrows",
+                "link": ""
+            },
+            {
+                "name": "Organic forms with contour lines",
+                "link": ""
+            },
+            {
+                "name": "Texture analysis",
+                "link": ""
+            },
+            {
+                "name": "Dissections",
+                "link": ""
+            },
+            {
+                "name": "Form intersections",
+                "link": ""
+            },
+            {
+                "name": "Organic intersections",
+                "link": ""
+            }
+        ]
+    }
+]
