@@ -1,4 +1,13 @@
 body {
-    background-color: rgb(222, 222, 222);
     text-align: center;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100vh;
 }

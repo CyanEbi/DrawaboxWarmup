@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Drawabox Warmups</h1>
-        <div>
-            <h3>Select your stage:</h3>
-            <select id="dropdown"></select>
-        </div>
-        <div>
-            <button onclick="pickWarmup()">Click!</button>
-        </div>
-        <div>
-            <h1 id="result"></h1>
+        <div class="columns">
+            <div class="column left">
+                <h1>Drawabox Warmups</h1>
+                <h3>Last completed lesson:</h3>
+                <select id="dropdown"></select>
+                <div>
+                    <button onclick="pickWarmup()">Click!</button>
+                </div>
+                <h1 id="result"></h1>
+            </div>
+            <div class="column right">
+                <img src="https://d15v304a6xpq4b.cloudfront.net/lesson_images/afc649b3.jpg">
+            </div>
         </div>
     </body>
 
