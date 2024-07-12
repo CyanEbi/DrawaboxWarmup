@@ -81,5 +81,120 @@
                 "link": ""
             }
         ]
+    },
+    {
+        "name": "Lesson 3",
+        "exercises": [
+            {
+                "name": "Organic arrows",
+                "link": ""
+            },
+            {
+                "name": "Leaves",
+                "link": ""
+            },
+            {
+                "name": "Branches",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Lesson 4",
+        "exercises": [
+            {
+                "name": "Organic forms with contour lines",
+                "link": ""
+            },
+            {
+                "name": "Insects/arachnoids without texture/details",
+                "link": ""
+            },
+            {
+                "name": "Insects/arachnoids optionally with texture/details",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Lesson 5",
+        "exercises": [
+            {
+                "name": "Organic intersections",
+                "link": ""
+            },
+            {
+                "name": "Non-hooved quadrupeds",
+                "link": ""
+            },
+            {
+                "name": "Hooved quadrupeds",
+                "link": ""
+            },
+            {
+                "name": "Animals of your choice",
+                "link": ""
+            },
+            {
+                "name": "Hybrid animals",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "250 cylinders",
+        "exercises": [
+            {
+                "name": "Cylinders without boxes",
+                "link": ""
+            },
+            {
+                "name": "Cylinders in boxes",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Lesson 6",
+        "exercises": [
+            {
+                "name": "Form intersections",
+                "link": ""
+            },
+            {
+                "name": "Everyday objects",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "25 wheels",
+        "exercises": [
+            {
+                "name": "Wheels",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "name": "Lesson 7",
+        "exercises": [
+            {
+                "name": "Form intersections",
+                "link": ""
+            },
+            {
+                "name": "Cylinders in boxes",
+                "link": ""
+            },
+            {
+                "name": "Form-intersection vehicles",
+                "link": ""
+            },
+            {
+                "name": "Vehicles",
+                "link": ""
+            }
+        ]
     }
 ]
