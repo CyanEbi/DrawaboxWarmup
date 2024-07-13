@@ -1,5 +1,6 @@
 const select = document.getElementById("dropdown");
 const result = document.getElementById("result");
+const instructions = document.getElementById("instructions");
 let lessons;
 let nlessons;
 let exercisePools;
@@ -32,5 +33,8 @@ function generateExercisePools() {
 function pickWarmup() {
     const idx = select.selectedIndex;
     const len = exercisePools[idx].length;
-    result.innerText = exercisePools[idx][Math.floor(Math.random() * len)].name;
+    const exercise = exercisePools[idx][Math.floor(Math.random() * len)]
+    result.innerText = exercise.name;
+    instructions.innerText = "Instructions";
+    instructions.setAttribute("href", exercise.link);
 }
