@@ -1,3 +1,9 @@
+//TODO: Pretty css
+//TODO: weigh exercises or lessons equally
+//TODO: Radio buttons for stage? Or something else to make selection faster
+//TODO: Keyboard shortcuts? To make the process faster
+//TODO: Link to the page about warmups?
+
 const select = document.getElementById("dropdown");
 const result = document.getElementById("result");
 const instructions = document.getElementById("instructions");
