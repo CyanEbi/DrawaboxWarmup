@@ -1,5 +1,4 @@
 //TODO: Pretty css
-//TODO: weigh exercises or lessons equally
 //TODO: Radio buttons for stage? Or something else to make selection faster
 //TODO: Keyboard shortcuts? To make the process faster
 //TODO: Link to the page about warmups?
@@ -7,6 +6,8 @@
 const select = document.getElementById("dropdown");
 const result = document.getElementById("result");
 const instructions = document.getElementById("instructions");
+const exercisesradio = document.getElementById("exercisesradio");
+const lessonsradio = document.getElementById("lessonsradio");
 let lessons;
 let nlessons;
 let exercisePools;
@@ -38,9 +39,27 @@ function generateExercisePools() {
 
 function pickWarmup() {
     const idx = select.selectedIndex;
-    const len = exercisePools[idx].length;
-    const exercise = exercisePools[idx][Math.floor(Math.random() * len)]
+    
+    let exercise;
+
+    if (exercisesradio.checked) {
+        exercise = weighExercisesEqually(idx);
+    } else if (lessonsradio.checked) {
+        exercise = weighLessonsEqually(idx);
+    }
+
     result.innerText = exercise.name;
     instructions.innerText = "Instructions";
     instructions.setAttribute("href", exercise.link);
+}
+
+function weighExercisesEqually(idx) {
+    const len = exercisePools[idx].length;
+    return exercisePools[idx][Math.floor(Math.random() * len)];
+}
+
+function weighLessonsEqually(idx) {
+    const lesson = lessons[Math.floor(Math.random() * (idx+1))];
+    const len = lesson.exercises.length;
+    return lesson.exercises[Math.floor(Math.random() * len)];
 }

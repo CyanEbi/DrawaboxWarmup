@@ -8,12 +8,25 @@
         <div class="columns">
             <div class="column left">
                 <h1>Drawabox Warmups</h1>
+
                 <h3>Last completed lesson:</h3>
+
                 <select id="dropdown"></select>
+
                 <div>
                     <button onclick="pickWarmup()">Click!</button>
                 </div>
+
+                <div class="radiobuttons">
+                    <input type="radio" name="weight" id="exercisesradio" value="exercises" checked>
+                    <label for="exercisesradio">Weigh exercises equally</label>
+                    
+                    <input type="radio" name="weight" id="lessonsradio" value="lessons">
+                    <label for="lessonsradio">Weigh lessons equally</label>
+                </div>
+
                 <h1 id="result"></h1>
+
                 <a id="instructions" href="" target="_blank"></a>
             </div>
             <div class="column right">
