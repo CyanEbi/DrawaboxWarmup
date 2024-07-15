@@ -1,13 +1,14 @@
 //TODO: Pretty css
-//TODO: Radio buttons for stage? Or something else to make selection faster
 //TODO: Keyboard shortcuts? To make the process faster
 //TODO: Link to the page about warmups?
+//TODO: Prompt to check instructions now and again
+//TODO: Link back to github page
 
-const select = document.getElementById("dropdown");
+const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const result = document.getElementById("result");
 const instructions = document.getElementById("instructions");
-const exercisesradio = document.getElementById("exercisesradio");
-const lessonsradio = document.getElementById("lessonsradio");
+const weightexercises = document.getElementById("weightexercises");
+const weightlessons = document.getElementById("weightlessons");
 let lessons;
 let nlessons;
 let exercisePools;
@@ -19,11 +20,23 @@ async function fetchExercises() {
     lessons = await response.json();
     nlessons = lessons.length;
 
+    // Create lesson radio buttons
     for (let i = 0; i < nlessons; i++) {
-        const option = document.createElement("option");
-        option.text = lessons[i].name;
-        select.add(option);
+        const label = document.createElement("label");
+        
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "lesson"
+        radio.value = lessons[i].name;
+        label.appendChild(radio);
+        
+        const span = document.createElement("span")
+        span.innerText = lessons[i].name;
+        label.appendChild(span);
+        lessonsradiogroup.appendChild(label);
     }
+
+    lessonsradiogroup.firstChild.firstChild.checked = true;
     
     generateExercisePools();
 }
@@ -38,19 +51,31 @@ function generateExercisePools() {
 }
 
 function pickWarmup() {
-    const idx = select.selectedIndex;
-    
+    const idx = getRadioGroupIdx(lessonsradiogroup);
+
     let exercise;
 
-    if (exercisesradio.checked) {
+    if (weightexercises.checked) {
         exercise = weighExercisesEqually(idx);
-    } else if (lessonsradio.checked) {
+    } else if (weightlessons.checked) {
         exercise = weighLessonsEqually(idx);
     }
 
     result.innerText = exercise.name;
     instructions.innerText = "Instructions";
     instructions.setAttribute("href", exercise.link);
+}
+
+function getRadioGroupIdx(radiogroup)
+{
+    radiobuttons = radiogroup.children;
+    for (let i = 0; i < radiobuttons.length; i++) {
+        if (radiobuttons[i].firstChild.checked) {
+            return i;
+        }
+    }
+
+    return -1;
 }
 
 function weighExercisesEqually(idx) {

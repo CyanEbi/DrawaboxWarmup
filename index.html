@@ -11,18 +11,23 @@
 
                 <h3>Last completed lesson:</h3>
 
+                <div id="lessonsradiogroup" class="radiobuttons"></div>
                 <select id="dropdown"></select>
 
                 <div>
                     <button onclick="pickWarmup()">Click!</button>
                 </div>
 
-                <div class="radiobuttons">
-                    <input type="radio" name="weight" id="exercisesradio" value="exercises" checked>
-                    <label for="exercisesradio">Weigh exercises equally</label>
-                    
-                    <input type="radio" name="weight" id="lessonsradio" value="lessons">
-                    <label for="lessonsradio">Weigh lessons equally</label>
+                <div id="weightradiogroup" class="radiobuttons">
+                    <label>
+                        <input type="radio" name="weight" id="weightexercises" value="exercises" checked>
+                        Weigh exercises equally
+                    </label>
+
+                    <label>
+                        <input type="radio" name="weight" id="weightlessons" value="lessons">
+                        Weigh lessons equally
+                    </label>
                 </div>
 
                 <h1 id="result"></h1>
