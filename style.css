@@ -8,9 +8,34 @@ body {
     grid-template-columns: 400px 1fr;
 }
 
-img {
-    max-width: 100%;
-    max-height: 95vh;
+.imgcontainer {
+    text-align: left;
+}
+
+.resultcontainer {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    height: 550px;
+    width: 960px;
+    overflow: hidden;
+}
+
+.resultboxup {
+    position: relative;
+    top: 380px;
+    transition: .2s ease-in;
+}
+
+.resultboxdown {
+    position: relative;
+    top: 550px;
+    transition: .2s ease-in;
+}
+
+.resulttext {
+    background-color: white;
+    border: solid;
 }
 
 .radiobuttons {

@@ -5,7 +5,8 @@
 //TODO: Link back to github page
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
-const result = document.getElementById("result");
+const resultbox = document.getElementById("resultbox");
+const result = document.getElementById("resulttext");
 const instructions = document.getElementById("instructions");
 const weightexercises = document.getElementById("weightexercises");
 const weightlessons = document.getElementById("weightlessons");
@@ -61,9 +62,18 @@ function pickWarmup() {
         exercise = weighLessonsEqually(idx);
     }
 
-    result.innerText = exercise.name;
+    playAnimation(exercise.name);
+
     instructions.innerText = "Instructions";
     instructions.setAttribute("href", exercise.link);
+}
+
+async function playAnimation(exercise) {
+    resultbox.className = "resultboxdown";
+    await new Promise(r => setTimeout(r, 400));
+    result.innerText = exercise;
+    
+    resultbox.className = "resultboxup";
 }
 
 function getRadioGroupIdx(radiogroup)

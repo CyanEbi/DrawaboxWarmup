@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="columns">
-            <div class="column left">
+            <div class="columnleft">
                 <h1>Drawabox Warmups</h1>
 
                 <h3>Last completed lesson:</h3>
@@ -31,12 +31,18 @@
                     <button onclick="pickWarmup()">Gimme an exercise!</button>
                 </div>
 
-                <h1 id="result"></h1>
-
+                
                 <a id="instructions" href="" target="_blank"></a>
             </div>
-            <div class="column right">
-                <img src="https://d15v304a6xpq4b.cloudfront.net/lesson_images/afc649b3.jpg">
+            <div class="columnright">
+                <div class="imgcontainer">
+                    <img src="https://d15v304a6xpq4b.cloudfront.net/lesson_images/afc649b3.jpg">
+                </div>
+                <div class="resultcontainer">
+                    <div id="resultbox" class="resultboxdown">
+                        <h1 id="result"><span id="resulttext" class="resulttext"></span></h1>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
