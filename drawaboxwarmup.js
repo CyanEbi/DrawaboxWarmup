@@ -1,3 +1,7 @@
+//TODO: Make first result appear faster
+//TODO: Put instructions in result box
+//TODO: Improve mask to better fit pool opening
+//TODO: Some css magic to make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css
 //TODO: Keyboard shortcuts? To make the process faster
 //TODO: Link to the page about warmups?
