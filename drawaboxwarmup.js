@@ -1,4 +1,3 @@
-//TODO: Make first result appear faster
 //TODO: Put instructions in result box
 //TODO: Improve mask to better fit pool opening
 //TODO: Some css magic to make all exercises fit in the pool opening (shrinking magic or multiline text)
@@ -73,15 +72,16 @@ function pickWarmup() {
 }
 
 async function playAnimation(exercise) {
-    resultbox.className = "resultboxdown";
-    await new Promise(r => setTimeout(r, 400));
-    result.innerText = exercise;
+    if (resultbox.className == "resultboxup") {
+        resultbox.className = "resultboxdown";
+        await new Promise(r => setTimeout(r, 400));
+    }
     
+    result.innerText = exercise;
     resultbox.className = "resultboxup";
 }
 
-function getRadioGroupIdx(radiogroup)
-{
+function getRadioGroupIdx(radiogroup) {
     radiobuttons = radiogroup.children;
     for (let i = 0; i < radiobuttons.length; i++) {
         if (radiobuttons[i].firstChild.checked) {
