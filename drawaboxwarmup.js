@@ -1,4 +1,3 @@
-//TODO: Put instructions in result box
 //TODO: Improve mask to better fit pool opening
 //TODO: Some css magic to make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css
@@ -9,7 +8,7 @@
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");
-const result = document.getElementById("resulttext");
+const result = document.getElementById("result");
 const instructions = document.getElementById("instructions");
 const weightexercises = document.getElementById("weightexercises");
 const weightlessons = document.getElementById("weightlessons");

@@ -33,9 +33,15 @@ body {
     transition: .2s ease-in;
 }
 
-.resulttext {
+.resultitems {
+    display: inline-grid;
     background-color: white;
     border: solid;
+    border-radius: 5px;
+}
+
+.resultitems h1 {
+    margin: 0px 5px 0px 5px;
 }
 
 .radiobuttons {
