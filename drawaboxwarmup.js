@@ -1,7 +1,8 @@
-//TODO: Improve mask to better fit pool opening
-//TODO: Some css magic to make all exercises fit in the pool opening (shrinking magic or multiline text)
-//TODO: Pretty css
 //TODO: Keyboard shortcuts? To make the process faster
+//TODO: Try putting the image as a background image
+//TODO: Improve mask to better fit pool opening
+//TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
+//TODO: Pretty css
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
 //TODO: Link back to github page
