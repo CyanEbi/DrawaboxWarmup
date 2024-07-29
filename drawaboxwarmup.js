@@ -1,4 +1,3 @@
-//TODO: Keyboard shortcuts? To make the process faster
 //TODO: Try putting the image as a background image
 //TODO: Improve mask to better fit pool opening
 //TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
@@ -19,6 +18,8 @@ let exercisePools;
 
 fetchExercises();
 
+document.addEventListener("keyup", keyboardShortcut);
+
 async function fetchExercises() {
     const response = await fetch("exercises.json");
     lessons = await response.json();
@@ -27,6 +28,10 @@ async function fetchExercises() {
     // Create lesson radio buttons
     for (let i = 0; i < nlessons; i++) {
         const label = document.createElement("label");
+
+        const shortcuttext = document.createElement("span")
+        shortcuttext.innerText = `(${(i+1)%10})`;
+        label.appendChild(shortcuttext);
         
         const radio = document.createElement("input");
         radio.type = "radio";
@@ -34,13 +39,13 @@ async function fetchExercises() {
         radio.value = lessons[i].name;
         label.appendChild(radio);
         
-        const span = document.createElement("span")
-        span.innerText = lessons[i].name;
-        label.appendChild(span);
+        const lessontext = document.createElement("span")
+        lessontext.innerText = lessons[i].name;
+        label.appendChild(lessontext);
         lessonsradiogroup.appendChild(label);
     }
 
-    lessonsradiogroup.firstChild.firstChild.checked = true;
+    lessonsradiogroup.children[0].children[1].checked = true;
     
     generateExercisePools();
 }
@@ -84,7 +89,7 @@ async function playAnimation(exercise) {
 function getRadioGroupIdx(radiogroup) {
     radiobuttons = radiogroup.children;
     for (let i = 0; i < radiobuttons.length; i++) {
-        if (radiobuttons[i].firstChild.checked) {
+        if (radiobuttons[i].children[1].checked) {
             return i;
         }
     }
@@ -101,4 +106,21 @@ function weighLessonsEqually(idx) {
     const lesson = lessons[Math.floor(Math.random() * (idx+1))];
     const len = lesson.exercises.length;
     return lesson.exercises[Math.floor(Math.random() * len)];
+}
+
+function keyboardShortcut(event) {
+    //Pick exercise shortcut
+    if (event.key == " ") {
+        pickWarmup();
+    }
+    //Lesson shortcut 
+    else if ((event.key >= 0) & (event.key <= 9)) {
+        const idx = mod(event.key-1, 10);
+        lessonsradiogroup.children[idx].children[1].checked = true;
+    }
+}
+
+//Apparently js does not have a modulo operator
+function mod(a, m) {
+    return ((a % m) + m) % m;
 }
