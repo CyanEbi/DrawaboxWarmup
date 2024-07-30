@@ -1,4 +1,3 @@
-//TODO: Try putting the image as a background image
 //TODO: Improve mask to better fit pool opening
 //TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css

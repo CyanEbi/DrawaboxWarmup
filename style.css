@@ -8,16 +8,20 @@ body {
     grid-template-columns: 400px 1fr;
 }
 
+.columnright {
+    background-image: url("https://d15v304a6xpq4b.cloudfront.net/lesson_images/afc649b3.jpg");
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
 .imgcontainer {
     text-align: left;
 }
 
 .resultcontainer {
-    position: absolute;
-    top: 0;
-    left: 320px;
+    position: relative;
     height: 550px;
-    width: 960px;
+    width: 801px;
     overflow: hidden;
 }
 
