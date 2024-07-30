@@ -1,4 +1,4 @@
-//TODO: Improve mask to better fit pool opening
+//TODO: Fix "space" shortcut (if button is focused, function is called twice)
 //TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css
 //TODO: Link to the page about warmups?

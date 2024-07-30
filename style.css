@@ -20,9 +20,9 @@ body {
 
 .resultcontainer {
     position: relative;
-    height: 550px;
+    height: 720px;
     width: 801px;
-    overflow: hidden;
+    mask-image: url("Pool\ mask.png");
 }
 
 .resultboxup {
@@ -33,7 +33,7 @@ body {
 
 .resultboxdown {
     position: relative;
-    top: 550px;
+    top: 570px;
     transition: .2s ease-in;
 }
 
