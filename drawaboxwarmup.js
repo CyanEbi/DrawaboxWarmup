@@ -1,8 +1,8 @@
-//TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
 //TODO: Link back to github page
+//TODO: Fix width of result box when text is multiline
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");

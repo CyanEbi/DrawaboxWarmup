@@ -21,7 +21,9 @@ body {
 .resultcontainer {
     position: relative;
     height: 720px;
-    width: 801px;
+    width: 351px;
+    margin-left: 225px;
+    margin-right: 225px;
     mask-image: url("Pool\ mask.png");
 }
 
@@ -42,10 +44,11 @@ body {
     background-color: white;
     border: solid;
     border-radius: 5px;
+    padding: 0px 5px 5px 5px;
 }
 
 .resultitems h1 {
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
 }
 
 .radiobuttons {
