@@ -1,4 +1,3 @@
-//TODO: Fix "space" shortcut (if button is focused, function is called twice)
 //TODO: Make all exercises fit in the pool opening (shrinking magic or multiline text)
 //TODO: Pretty css
 //TODO: Link to the page about warmups?
@@ -11,6 +10,7 @@ const result = document.getElementById("result");
 const instructions = document.getElementById("instructions");
 const weightexercises = document.getElementById("weightexercises");
 const weightlessons = document.getElementById("weightlessons");
+const button = document.getElementById("button");
 let lessons;
 let nlessons;
 let exercisePools;
@@ -78,7 +78,7 @@ function pickWarmup() {
 async function playAnimation(exercise) {
     if (resultbox.className == "resultboxup") {
         resultbox.className = "resultboxdown";
-        await new Promise(r => setTimeout(r, 400));
+        await new Promise(r => setTimeout(r, 500));
     }
     
     result.innerText = exercise;
@@ -109,7 +109,7 @@ function weighLessonsEqually(idx) {
 
 function keyboardShortcut(event) {
     //Pick exercise shortcut
-    if (event.key == " ") {
+    if ((event.key == " ") & (document.activeElement != button)) {
         pickWarmup();
     }
     //Lesson shortcut 
