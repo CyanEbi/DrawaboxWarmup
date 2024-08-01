@@ -28,15 +28,15 @@ async function fetchExercises() {
     for (let i = 0; i < nlessons; i++) {
         const label = document.createElement("label");
 
-        const shortcuttext = document.createElement("span")
-        shortcuttext.innerText = `(${(i+1)%10})`;
-        label.appendChild(shortcuttext);
-        
         const radio = document.createElement("input");
         radio.type = "radio";
         radio.name = "lesson"
         radio.value = lessons[i].name;
         label.appendChild(radio);
+        
+        const shortcuttext = document.createElement("span")
+        shortcuttext.innerText = `(${(i+1)%10}) `;
+        label.appendChild(shortcuttext);
         
         const lessontext = document.createElement("span")
         lessontext.innerText = lessons[i].name;
@@ -44,7 +44,7 @@ async function fetchExercises() {
         lessonsradiogroup.appendChild(label);
     }
 
-    lessonsradiogroup.children[0].children[1].checked = true;
+    lessonsradiogroup.children[0].children[0].checked = true;
     
     generateExercisePools();
 }
@@ -88,7 +88,7 @@ async function playAnimation(exercise) {
 function getRadioGroupIdx(radiogroup) {
     radiobuttons = radiogroup.children;
     for (let i = 0; i < radiobuttons.length; i++) {
-        if (radiobuttons[i].children[1].checked) {
+        if (radiobuttons[i].children[0].checked) {
             return i;
         }
     }
@@ -115,7 +115,7 @@ function keyboardShortcut(event) {
     //Lesson shortcut 
     else if ((event.key >= 0) & (event.key <= 9)) {
         const idx = mod(event.key-1, 10);
-        lessonsradiogroup.children[idx].children[1].checked = true;
+        lessonsradiogroup.children[idx].children[0].checked = true;
     }
 }
 

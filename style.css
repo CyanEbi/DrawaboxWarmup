@@ -1,17 +1,21 @@
-body {
-    text-align: center;
-    margin: 0;
-}
-
 .columns {
     display: grid;
     grid-template-columns: 400px 1fr;
+}
+
+.columnleft {
+    padding-left: 10px;
+}
+
+h3 {
+    margin-bottom: 0px;
 }
 
 .columnright {
     background-image: url("https://d15v304a6xpq4b.cloudfront.net/lesson_images/afc649b3.jpg");
     background-repeat: no-repeat;
     height: 700px;
+    text-align: center;
 }
 
 .imgcontainer {
@@ -55,8 +59,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     text-align: left;
+    margin-left: 10px;
 }
 
 ul {
     text-align: left;
+    margin-top: 0px;
+    padding-left: 33px;
 }
