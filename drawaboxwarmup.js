@@ -1,8 +1,6 @@
-//TODO: Space shortcut triggers radio buttons if focused
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
 //TODO: Link back to github page
-//TODO: Fix width of result box when text is multiline
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");
@@ -109,7 +107,7 @@ function weighLessonsEqually(idx) {
 
 function keyboardShortcut(event) {
     //Pick exercise shortcut
-    if ((event.key == " ") & (document.activeElement != button)) {
+    if (event.key == "Enter") {
         pickWarmup();
     }
     //Lesson shortcut 
