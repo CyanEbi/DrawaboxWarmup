@@ -1,3 +1,4 @@
+//TODO: Space shortcut triggers radio buttons if focused
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
 //TODO: Link back to github page
