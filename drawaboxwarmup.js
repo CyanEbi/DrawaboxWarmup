@@ -1,6 +1,5 @@
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
-//TODO: Link back to github page
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");

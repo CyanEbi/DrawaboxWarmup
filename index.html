@@ -7,36 +7,49 @@
     <body>
         <div class="columns">
             <div class="columnleft">
-                <h1>Drawabox Warmups</h1>
-
-                <h3>Last completed lesson:</h3>
-
-                <div id="lessonsradiogroup" class="radiobuttons"></div>
-
-                <h3>Weight:</h3>
-
-                <div class="radiobuttons">
-                    <label>
-                        <input type="radio" name="weight" id="weightexercises" value="exercises" checked>
-                        Weigh exercises equally
-                    </label>
-
-                    <label>
-                        <input type="radio" name="weight" id="weightlessons" value="lessons">
-                        Weigh lessons equally
-                    </label>
+                <div class="content">
+                    <h1>Drawabox Warmups</h1>
+    
+                    <h3>Last completed lesson:</h3>
+    
+                    <div id="lessonsradiogroup" class="radiobuttons"></div>
+    
+                    <h3>Weight:</h3>
+    
+                    <div class="radiobuttons">
+                        <label>
+                            <input type="radio" name="weight" id="weightexercises" value="exercises" checked>
+                            Weigh exercises equally
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="weight" id="weightlessons" value="lessons">
+                            Weigh lessons equally
+                        </label>
+                    </div>
+    
+                    
+                    <h3>Keyboard shortcuts:</h3>
+                    
+                    <ul>
+                        <li>1-0: Select last completed lesson</li>
+                        <li>Enter: Pick an exercise</li>
+                    </ul>
+                    
+                    <div>
+                        <button id="button" onclick="pickWarmup()">Gimme an exercise!</button>
+                    </div>
                 </div>
 
-                
-                <h3>Keyboard shortcuts:</h3>
-                
-                <ul>
-                    <li>1-0: Select last completed lesson</li>
-                    <li>Enter: Pick an exercise</li>
-                </ul>
-                
-                <div>
-                    <button id="button" onclick="pickWarmup()">Gimme an exercise!</button>
+                <div class="footer">
+                    <div class="links">
+                        <a href="https://drawabox.com/" target="_blank">
+                            <img src="https://d15v304a6xpq4b.cloudfront.net/assets/images/icons/favicon-32x32.png">
+                        </a>
+                        <a href="https://github.com/CyanEbi/DrawaboxWarmup" target="_blank">
+                            <img src="https://github.githubassets.com/favicons/favicon.png">
+                        </a>
+                    </div>
                 </div>
                 
             </div>

@@ -5,10 +5,18 @@
 
 .columnleft {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h3 {
     margin-bottom: 0px;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
 }
 
 .columnright {
