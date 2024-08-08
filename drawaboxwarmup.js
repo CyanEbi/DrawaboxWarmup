@@ -1,5 +1,6 @@
 //TODO: Link to the page about warmups?
 //TODO: Prompt to check instructions now and again
+//TODO: Icon
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");
@@ -110,7 +111,7 @@ function keyboardShortcut(event) {
         pickWarmup();
     }
     //Lesson shortcut 
-    else if ((event.key >= 0) & (event.key <= 9)) {
+    else if ((event.key >= "0") & (event.key <= "9")) {
         const idx = mod(event.key-1, 10);
         lessonsradiogroup.children[idx].children[0].checked = true;
     }
