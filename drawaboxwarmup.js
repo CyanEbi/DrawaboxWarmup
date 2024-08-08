@@ -70,7 +70,6 @@ function pickWarmup() {
 
     playAnimation(exercise.name);
 
-    instructions.innerText = "Instructions";
     instructions.setAttribute("href", exercise.link);
 }
 
