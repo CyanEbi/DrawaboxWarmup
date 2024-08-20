@@ -1,7 +1,3 @@
-//TODO: Link to the page about warmups?
-//TODO: Prompt to check instructions now and again
-//TODO: Icon
-//TODO: Hide fishing line below result box
 
 const lessonsradiogroup = document.getElementById("lessonsradiogroup");
 const resultbox = document.getElementById("resultbox");
