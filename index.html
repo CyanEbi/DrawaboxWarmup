@@ -14,17 +14,17 @@
     
                     <div id="lessonsradiogroup" class="radiobuttons"></div>
     
-                    <h3>Weight:</h3>
+                    <h3>Randmizing method (only one of these would be used in the final version):</h3>
     
                     <div class="radiobuttons">
                         <label>
                             <input type="radio" name="weight" id="weightexercises" value="exercises" checked>
-                            Weigh exercises equally
+                            Simply pick one out of all relevant exercises
                         </label>
     
                         <label>
                             <input type="radio" name="weight" id="weightlessons" value="lessons">
-                            Weigh lessons equally
+                            First pick a lesson, then pick an exercise
                         </label>
                     </div>
     
@@ -32,12 +32,12 @@
                     <h3>Keyboard shortcuts:</h3>
                     
                     <ul>
-                        <li>1-0: Select last completed lesson</li>
-                        <li>Enter: Pick an exercise</li>
+                        <li>[Numbers]: Select last completed lesson</li>
+                        <li>[Enter]: Pick an exercise</li>
                     </ul>
                     
                     <div>
-                        <button id="button" onclick="pickWarmup()">Gimme an exercise!</button>
+                        <button id="button" onclick="pickWarmup()">[Enter] Pick an exercise!</button>
                     </div>
                 </div>
 

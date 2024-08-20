@@ -34,7 +34,7 @@ async function fetchExercises() {
         label.appendChild(radio);
         
         const shortcuttext = document.createElement("span")
-        shortcuttext.innerText = `(${(i+1)%10}) `;
+        shortcuttext.innerText = `[${(i+1)%10}] `;
         label.appendChild(shortcuttext);
         
         const lessontext = document.createElement("span")
