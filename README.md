@@ -1,2 +1,2 @@
-# DrawaboxWarmup
-Randomly picks a Drawabox warmup based on how many lessons you've completed.
+# DrawaboxWarmups
+Randomly picks Drawabox warmups based on how many lessons you've completed.
