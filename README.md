@@ -1,6 +1,12 @@
 # DrawaboxWarmups
 Randomly picks Drawabox warmups based on how many lessons you've completed.
 
+## Webpage link
+[https://cyanebi.github.io/DrawaboxWarmups/](https://cyanebi.github.io/DrawaboxWarmups/)
+
+## Preview
+![DrawaboxWarmups](https://github.com/user-attachments/assets/d718109b-b580-4374-83ec-d7aeaa934e77)
+
 ## To do
 - Webpage icon
 - Link to the Lesson 0 warmups page
